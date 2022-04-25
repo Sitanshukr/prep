@@ -17,7 +17,7 @@ public class Arrayreversal {
     }
 
     //func to reverse an array
-    //i/p- List<Interger>
+    //i/p- List<Integer>
     private static Object[] reverseArray(List <Integer> a){
 
         Object[] inputArr=a.toArray();
