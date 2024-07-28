@@ -9,5 +9,8 @@ public class Car extends Vehical{
 		System.out.println("Driving car");
 	}
 
-	
+	public void getFuel() {
+		
+		System.out.println("Fuel is Full");
+	}
 }

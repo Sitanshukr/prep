@@ -3,7 +3,7 @@ package com.content.java.exception;
 public class Trywithreturnstatement {
 
     public static void main (String[] args){
-        System.out.println(getValue("Hello"));
+        System.out.println(getValue("HI"));
     }
 
     private static int getValue(String input){
@@ -14,8 +14,9 @@ public class Trywithreturnstatement {
             }
 
         }catch(Exception e){
-            //return 0;
-            e.getStackTrace();
+        	
+            //return 3;
+            e.printStackTrace();
         }
 
         return 0;

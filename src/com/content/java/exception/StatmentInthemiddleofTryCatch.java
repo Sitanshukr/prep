@@ -6,17 +6,23 @@ public class StatmentInthemiddleofTryCatch {
     public static void main(String[] args){
 
         try{
-            System.out.println("Statement inside Try");
+            System.out.println("Statement inside try");
+            long q=10/0;
+            System.out.println("q value"+q);
+            return;
         }
         //System.out.println("Statement just outside try");
         catch(Exception e){
-
-            e.getStackTrace();
+//return;
+            e.printStackTrace();
         }
-        //System.out.println("Statement just outside catch);
+        //System.out.println("Statement just outside catch");
         finally {
-            System.out.println("Statement just outside try");
+            System.out.println("Statement inside finally");
+           //return;
         }
+        
+        //System.out.println("Staement below");
 
 
     }

@@ -8,6 +8,9 @@ public class AbstractDemo {
 		Vehical object=new Car();
 		object.drive();
 		System.out.println(object.hashCode());
+		Car c=(Car) object;
+		c.getFuel();
+		System.out.println(object.hashCode());
 		
 		object=new Bike();
 		object.drive();

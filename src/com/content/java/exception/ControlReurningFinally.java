@@ -8,6 +8,7 @@ public class ControlReurningFinally {
     private static Boolean getvalue(String in){
         try {
             if (in == "hello") {
+                System.out.println("Inside try block");
                 return true;
                 //System.out.println("Inside try block");
 
@@ -21,6 +22,7 @@ public class ControlReurningFinally {
         finally {
             //System.exit(0);
             System.out.println("Hi from finally block");
+            //return false;
            // System.exit(0);
         }
         return false;

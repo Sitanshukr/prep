@@ -17,17 +17,17 @@ public class PassbyValuePassByReference {
         System.out.println(b);
         System.out.println(a);
 
-        int [] c={4,5,6};
-        int [] d=c;
+        //int [] c={4,5,6};
+        //int [] d=c;
 
-        int [] e={7,8,9};
-        int[] f= {7,8,9};
+       // int [] e={7,8,9};
+       // int[] f= {7,8,9};
 
-        System.out.println(c);
-        System.out.println(d);
+       // System.out.println(c);
+        //System.out.println(d);
 
-        System.out.println(e);
-        System.out.println(f);
+        //System.out.println(e);
+        //System.out.println(f);
 
         PassbyValuePassByReference obj=new PassbyValuePassByReference();
         obj.add(10);
