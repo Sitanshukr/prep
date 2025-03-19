@@ -1,20 +1,16 @@
 package com.content.java.core.oops;
 
-public class SingleTon {
-	
-	private static SingleTon obj= new SingleTon();
-
+public class  SingleTon {
+	private static final SingleTon singleTonobj= new SingleTon();
 	private SingleTon() {
-		
 	}
 	
 	public static SingleTon getInstance() {
-		
-		if(obj ==null) {
+		if(singleTonobj ==null) {
 		  return new SingleTon();
 		}
 		else {
-			return obj;
+			return singleTonobj;
 		}
 	}
 }

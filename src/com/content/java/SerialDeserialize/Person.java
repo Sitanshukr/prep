@@ -1,9 +1,10 @@
 package com.content.java.SerialDeserialize;
 
-public class Person {
-	
-	
-	
+import java.io.Serializable;
+
+public class Person implements Serializable {
+
+	private static final long serialVersionUID = 13543L;
 	private int age;
 	private String name;
 	private String socialSecurity;

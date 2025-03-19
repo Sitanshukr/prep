@@ -25,8 +25,6 @@ public class Duplicates {
 	}
 	
     private static int findNumberOfDuplicates(List<String> names, int []price, int [] weight) {
-	
-    	
     	Map<String , Integer> duplicatesMap=new HashMap<String, Integer>();
 	    for(int i =0; i<5; i++) {
 	    	int duplicates=0;

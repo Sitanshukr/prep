@@ -10,7 +10,6 @@ public class Car extends Vehical{
 	}
 
 	public void getFuel() {
-		
 		System.out.println("Fuel is Full");
 	}
 }
