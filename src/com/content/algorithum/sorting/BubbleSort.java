@@ -6,6 +6,7 @@ public class BubbleSort {
         bubbleSort(arr);
         print(arr);
     }
+    
 
 
     private static void bubbleSort(int [] arr){
