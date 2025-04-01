@@ -1,0 +1,24 @@
+1. Annoymous Inner class -
+    Are classes without name , implemented by
+    AnnoInterface annoInterface = new AnnoInterface()
+    {//this is annonymous inner class that is implementing AnnoInterface and therfore implementing both methods
+            @Override
+            public void display() {
+                System.out.println("Hi From Annonymous Inner Class Display Method");
+            }
+            @Override
+            public String giveName() {
+                return "demo";
+            }
+        };
+
+2. Lambda Exp :
+        Are special type of annonymous inner classes that have exactly one abstract method
+        Those annoymous inner class that one method , can be converted to lambda exp
+
+3. Annonymous Inner classes are more powerful than Lambda exp as they can support multiple abstract methods
+4. Lambda exp if we are using return the its compulsory to implement inside curly braces { }
+5. Default methods in Interfaces from java 8 allows classes to implement only if required.
+    Interfaces allows for multiple inheritance if and only of child class has implemented provided implementation of
+    default methods.
+6. Method refrences only works in case of functional interfaces
