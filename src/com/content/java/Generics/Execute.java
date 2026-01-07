@@ -8,11 +8,11 @@ import java.util.stream.Collectors;
 public class Execute<T> {
 
     //T thingToExecute;
-
-    public void print(T thingToExecute){
+    //This method is generic type it means "thingToExecute" will accept any object type or collection object type
+    public <T> void print(T thingToExecute){
         System.out.println(thingToExecute  + " started" );
     }
-
+//this is wildcard method, it means that it will accept only List type object but it list can hold any type of object inside it
     public void display(List<?> list){
         System.out.println(list);
     }
@@ -27,7 +27,7 @@ public class Execute<T> {
        List<String>listOfString=Arrays.asList("test","give","me","ticket","for","appraisal");
        Execute<List<String>> e3= new Execute<>();
        e3.display(listOfString);
-
-        System.out.println( listOfString.stream().filter(name->name.length()>3).collect(Collectors.toList()));
+       e3.print(listOfString);
+       System.out.println( listOfString.stream().filter(name->name.length()>3).collect(Collectors.toList()));
     }
 }

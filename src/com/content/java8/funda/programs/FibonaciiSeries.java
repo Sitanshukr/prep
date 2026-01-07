@@ -3,6 +3,7 @@ package com.content.java8.funda.programs;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.function.Supplier;
 
 //WAP to implement Fibonacii series using java 8
@@ -10,11 +11,12 @@ import java.util.function.Supplier;
 public class FibonaciiSeries {
 
     static  ArrayList<Integer> resultList = new ArrayList<>();
+    static  Predicate<Integer> check0or1 = (i->i==0||i==1);
 
     //Using predefined Function Functional Interface
     static Function<Integer, List> fiboFunc =(n)->{
         for (int i=0;i<=n; i++) {
-            if (i==0 || i ==1) {
+            if (check0or1.test(i)) {
                 resultList.add(i);
             } else {
                 resultList.add(resultList.get(i-1)+resultList.get(i-2)) ;

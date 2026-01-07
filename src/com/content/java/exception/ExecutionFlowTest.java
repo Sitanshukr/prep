@@ -15,8 +15,6 @@ public class ExecutionFlowTest {
 
 	
 	private static void divide(int a, int b) {
-		
-		
 		int c = a/b;
 		System.out.println("Result is --  "+ c);
 	}

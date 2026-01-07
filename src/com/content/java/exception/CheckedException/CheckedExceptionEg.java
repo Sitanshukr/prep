@@ -2,7 +2,6 @@ package com.content.java.exception.CheckedException;
 
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
@@ -17,13 +16,8 @@ public class CheckedExceptionEg {
     }
 
     public static void readFile () throws IOException {
-
         FileInputStream fileInputStream = null;
-
-            fileInputStream = new FileInputStream("demo.txt");
-            ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-
-
-
+        fileInputStream = new FileInputStream("demo.txt");
+        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
     }
 }

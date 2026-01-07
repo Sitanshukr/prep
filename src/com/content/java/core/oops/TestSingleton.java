@@ -10,9 +10,6 @@ public class TestSingleton {
 		if(singleTon1==singleTon2){
 			System.out.println("Both objects are same");
 		}
-
-		
-
 	}
 
 }

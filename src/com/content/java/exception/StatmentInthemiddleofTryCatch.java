@@ -9,7 +9,7 @@ public class StatmentInthemiddleofTryCatch {
             System.out.println("Statement inside try");
             long q=10/0;
             System.out.println("q value"+q);
-            return;
+           // return;
         }
         //System.out.println("Statement just outside try");
         catch(Exception e){

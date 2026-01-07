@@ -9,8 +9,8 @@ public class Factorial {
    // 5!= 5*4*3*2*1
     //Recurrsion
     public static int factorial(int input){
-        if(input==0){
-            return 0;
+        if(input==0 || input==1){
+            return 1;
         }else{
              return input * factorial(input-1);
         }

@@ -1,7 +1,5 @@
 package com.content.java.exception;
 
-import java.io.EOFException;
-
 public class ControlReurningFinally {
 
 
@@ -14,7 +12,6 @@ public class ControlReurningFinally {
 
             } else {
                 return false;
-
             }
         }catch(Exception e){
             e.getStackTrace();

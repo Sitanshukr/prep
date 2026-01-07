@@ -17,9 +17,9 @@ public class MyComparator implements Comparator<Integer> {
         }
     }
     */
-
+//this version of compare implementation reverses element in list
     @Override
     public int compare(Integer o1, Integer o2) {
-       return  (o1<o2) ? -1 : (o1>o2)?1:0;
+       return  (o1<o2) ? 1 : (o1>o2)?-1:0;
       }
     }
